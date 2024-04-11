@@ -1,0 +1,1216 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+  font-family: "Manrope", sans-serif;
+  position: relative;
+}
+header{
+    width: 100vw;
+    height: 22vh;
+    display: flex;
+    flex-direction: column;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+}
+.social-header{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #DF5311;
+    padding: 0vw 3vw;
+}
+.contact-numbers-menu{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 1vw;
+    align-items: center;
+}
+.contact-numbers-menu a{
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    color: white;
+}
+.contact-numbers-menu i{
+    color: white;
+}
+.social-icons-menu{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: end;
+    gap: 1.5vw;
+}
+.social-icons-menu a{
+    text-decoration: none;
+    font-size: 14px;
+    color: white;
+}
+.main-header{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    flex-direction: row;
+    padding: 0vw 3vw;
+}
+.logo{
+    width: 30%;
+    height: 100%;
+}
+.logo:hover{
+    cursor: pointer;
+}
+.logo img{
+    width: 75%;;
+    height: 100%;
+}
+.menu{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content:flex-end;
+    gap: 0.2vw;
+}
+.menu a{
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 16px;
+    color:#687C64;
+    padding: 1vw 1.5vw;
+}
+.donate-button{
+    color:white;
+    background-color:#687C64;
+}
+
+
+/* drop down menus start*/
+/* about drop down menu */
+.about-drop-down-menu{
+    position: absolute;
+    top: 10vw;
+    left: 52vw;
+    z-index: 50;
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+}
+.about-drop-down-menu a{
+    text-decoration: none;
+    color:#687C64;
+    background-color: #dce2e2;
+    padding: 1vw;
+    border-bottom: 1px solid rgb(170, 168, 168);
+}
+.about-drop-down-menu a:hover{
+    color: #dce2e2;
+    background-color:  #687C64;
+}
+
+
+/* activity dropdown menu starts */
+.activity-drop-down-menu{
+    position: absolute;
+    top: 10vw;
+    left: 58vw;
+    z-index: 50;
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+}
+.activity-drop-down-menu a{
+    text-decoration: none;
+    color:#687C64;
+    background-color: #dce2e2;
+    padding: 1vw;
+    border-bottom: 1px solid rgb(170, 168, 168);
+}
+.activity-drop-down-menu a:hover{
+    color: #dce2e2;
+    background-color:  #687C64;
+}
+
+/* drop down menus end*/
+
+/* main styles start */
+main{
+    width: 100vw;
+}
+
+/* swiper slide show started */
+.swiper {
+    width: 100vw;
+    height: 100vh;
+    border: 1px solid grey;
+  }
+.swiper-wrapper{
+    width: 100%;
+    height: 100%;
+}
+.swiper-slide{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0vw 5vw;
+}
+.swiper-slide-1{
+    width: 100%;
+    height: 100%;
+    background-image: url('images/drinking_water.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 100%;
+}
+.swiper-slide-2{
+    width: 100%;
+    height: 100%;
+    background-image: url('images/indian-1283789_1280.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.swiper-slide-3{
+    width: 100%;
+    height: 100%;
+    background-image: url('images/girl-2529907_1280.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.swiper-slide-4{
+    width: 100%;
+    height: 100%;
+    background-image: url('images/girl-2529907_1280.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.swiper-slide-5{
+    width: 100%;
+    height: 100%;
+    background-image: url('images/girl-2529907_1280.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.swiper-slide-content{
+    width: 85%;
+    margin-top: 5vw;
+}
+.swiper-slide-content h4{
+    font-size: 25px;
+    color: white;
+}
+.swiper-slide-content h2{
+    font-size: 80px;
+    color: white;
+}
+.swiper-slide-content p{
+    font-size: 18px;
+    color:white;
+    font-weight: 600;
+    margin-top: 0.5vw;
+}
+.swiper-slide-buttons{
+    margin-top: 4vw;
+}
+.swiper-slide-buttons button{
+    border-radius: 2px;
+    padding: 1.7vw 2.5vw;
+    margin-right: 2vw;
+    font-weight: 600;
+    font-size: 16px;
+}
+.swiper-slide-contact-btn{
+    background-color: #687C64;
+    color: white;
+    border: none;
+}
+.swiper-slide-donate-btn{
+    background-color: orange;
+    border: none;
+    color: white;
+}
+
+/* our reach container styles start */
+ .our-reach-container{
+    width: 100vw;
+    padding: 8vw 0vw;
+    display: flex;
+    gap: 6vw;
+    flex-direction: row;
+ }
+ .our-reach-elements{
+    width: 40%;
+    text-align: right;
+    position: relative;
+ }
+ .our-reach-elements h2{
+    font-size: 50px;
+    color: #687C64;
+ }
+ .our-reach-elements p{
+    font-size: 16px;
+    color: #687C64;
+    font-weight: 700;
+    margin-bottom: 2vw;
+ }
+.our-reach-element-box-line{
+    position: absolute;
+    right: 0;
+    width: 100px;
+    height: 1px;
+    background-color: #687C64;
+}
+
+
+ .our-reach-content{
+    width: 60%;
+    padding-right: 8vw;
+ }
+ .our-reach-elemets-box{
+    margin-bottom: 5vw;
+ }
+ .our-reach-content h6{
+    font-size: 20px;
+    font-weight: 300;
+    color: #687C64;
+    margin-bottom: 1.5vw;
+ }
+ .our-reach-content h2{
+    font-size: 50px;
+    line-height: 4.5vw;
+    margin-bottom: 2vw;
+    color: #687C64;
+ }
+ .our-reach-content p{
+    font-size: 18px;
+    color: #687C64;
+    margin-top: 2vw;
+    line-height: 2.5vw;
+ }
+ .our-reach-content .above-btn-para{
+    margin-bottom: 5vw;
+ }
+.our-reach-content a{
+    background-color:#687C64;
+    padding: 2vw 5vw;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 700;
+    word-spacing: 0.2vw;
+    letter-spacing: 0.3vw;
+    color: white;
+}
+/* our reach container styles end */
+
+/* service section styles start */
+.service-section{
+    width: 100vw;
+    height: 180vh;
+    padding: 5vw;
+    background-color: #f0f0f0;
+}
+.service-section-content{
+    width: 70%;
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+.service-section-content h2{
+    font-size: 40px;
+    margin-top: 1vw;
+    color: #174249;
+}
+.service-section-content p{
+    text-align: center;
+    margin-top: 1vw;
+    color: #8FA6AA;
+}
+.service-box{
+    text-align: center;
+}
+.service-box i{
+    font-size: 5vw;
+    color: #fb4588;
+    background-color: #faafca;
+    padding: 1vw;
+    border-radius: 50%;
+}
+.service-box h2{
+    font-size: 22px;
+    font-weight: 500;
+    color: #174249;
+    margin-top: 2vw;
+}
+.service-box p{
+    font-size: 16px;
+    color: #8FA6AA;
+    margin-top: 2vw;
+}
+.service-section-span{
+    font-size: 18px;
+    color: #687C64;
+}
+.service-section-span-line{
+    color: red;
+    margin-left:0.2vw;
+}
+
+.service-box-container{
+    width: 100%;
+    height: 80%;
+    margin-top: 5vw;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 3vw;
+}
+
+/* help us section styles start */
+.help-us-section{
+    width: 100vw;
+    height: 120vh;
+    display: flex;
+    flex-direction: row;
+    padding: 10vw 5vw;
+    gap: 4vw;
+}
+.help-us-image{
+    width: 50%;
+    height: 100%;
+    position: relative;
+}
+.image-1{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 34vw;
+    height: 40vw;
+}
+.image-2{
+    position: absolute;
+    bottom: -5.2vw;
+    left: 15vw;
+    width: 25vw;
+    height: 22vw;
+    z-index: 1;
+}
+.help-us-image-line{
+    width: 1.2vw;
+    height: 20vw;
+    background-color:#FCB429;
+    position: absolute;
+    top: 0;
+    left: 36vw;
+    z-index: 0;
+}
+.help-us-content{
+    width: 50%;
+    height: 100%;
+}
+.help-us-content-span-text{
+    font-size: 18px;
+    color: #768385;
+}
+.dash-span{
+    color: red;
+    margin-left: 1vw;
+}
+.help-us-content h2{
+    font-size: 50px;
+    color: #144047;
+    line-height: 4vw;
+    margin-top: 1vw;
+}
+.help-us-content-details{
+    width: 100%;
+    margin-top: 3vw;
+    display: flex;
+    flex-direction: column;
+    gap: 3.5vw;
+}
+.help-us-content-details-box{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1.5vw;
+    cursor: pointer;
+}
+.help-us-content-details-box i{
+    font-size: 2vw;
+    color: #138999;
+    padding: 2vw;
+    background-color: #F1F6F7;
+}
+.help-us-content-details-box h4{
+    font-size: 20px;
+    color: #144047;
+    margin-bottom: 0.5vw;
+}
+.help-us-content-details-box p{
+    font-size: 18px;
+    color: #687C64;
+}
+/* help us styles section styles end */
+
+
+/* fund raising section styles start */
+.fund-raising-section{
+    width: 100vw;
+    height: 80vh;
+    position: relative;
+    background-image: url('images/poor_girl_child.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.fund-raising-section::before{
+    width: 100%;
+    height: 100%;
+    content: ' ';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.735);
+}
+.fund-raising-section h6, .fund-raising-section h2, .fund-raising-section p, .fund-raising-section a{
+    position: absolute;
+    z-index: 10;
+}
+.fund-raising-section h6{
+    font-size: 20px;
+    color: white;
+    top: 8vw;
+    left: 35vw;
+    font-weight: 500;
+}
+.fund-raising-section h2{
+    font-size: 50px;
+    color: white;
+    top: 12vw;
+    left: 20vw;
+    font-weight: 500;
+    text-align: center;
+}
+.fund-raising-section a{
+    background-color:#DF5311;
+    top: 26vw;
+    left: 40vw;
+    text-decoration: none;
+    padding: 1.3vw 2.5vw;
+    font-size: 1.2vw;
+    font-weight: 600;
+    color: white;
+    text-transform: uppercase;
+}
+
+/* start donate section styles start */
+.start-donate{
+    width: 100vw;
+    height: 130vh;
+    padding: 8vw 5vw;
+    border: 1px solid grey;
+}
+.start-donate-content{
+    width: 100%;
+    height: 15%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 5vw;
+}
+.start-donate-content-text-span{
+    color: #687C64;
+}
+.start-donate-content-text-line{
+    color: #DF5311;
+}
+.start-donate-content-text h2{
+    font-size: 50px;
+    color: #144047;
+}
+.start-donate-btn a{
+    background-color: #687C64;
+    text-decoration: none;
+    color: white;
+    padding: 1.2vw 2.5vw;
+    text-transform: uppercase;
+    letter-spacing: 0.2vw;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+
+
+.start-donate-box-container{
+    width: 100%;
+    height: 85%;
+    display: flex;
+    flex-direction: row;
+    gap: 2vw;
+    position: relative;
+    overflow: hidden;
+}
+.start-donate-box-container-slider{
+    display: flex;
+    gap: 2vw;
+    transition: transform 0.5s ease;
+}
+.start-donate-box{
+    flex: 0 0 calc(100% / 3); /* Set width for each slide */
+    height: 90%;
+    text-align: left;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+}
+.start-donate-box-image{
+    position: relative;
+    width: 100%;
+    height: 50%;
+}
+.start-donate-box-image img{
+    width: 100%;
+    height: 100%;
+}
+.start-donate-box-image p{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color:#144047;
+    padding: 0.5vw 1vw;
+    color: white;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.start-donate-box-content{
+    width: 100%;
+    height: 50%;
+    padding: 2vw;
+}
+.start-donate-box-content h6{
+    font-size: 20px;
+    color: #144047;
+    margin-bottom: 0.5vw;
+}
+.start-donate-box-content p{
+    font-size: 15px;
+    color:#687C64;
+    margin-bottom: 2vw;
+}
+.start-donate-box-content a{
+    text-decoration: none;
+    background-color:#144047;
+    padding: 1vw 2vw;
+    text-transform: uppercase;
+    color: white;
+}
+
+.next, .prev {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    background-color: #df5211fe;
+    padding: 1vw 2vw;
+    color: white;
+  }
+
+  .prev {
+    left: 0;
+  }
+  
+  .next {
+    right: 0;
+  }
+
+
+/* feedbacks slide show styles start */
+.feedback-section{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    padding: 2vw 5vw;
+    background-color: #144047;
+}
+.feedback-section-content{
+    width: 50%;
+    height: 100%;
+    padding: 5vw;
+}
+.feedback-section-content .feedback-section-content-span{
+    color: #687C64;
+    margin-right: 0.5vw;
+}
+.feedback-section-content-line{
+    color: #DF5311;
+}
+.feedback-section-content h2{
+    font-size: 50px;;
+    line-height: 4vw;
+    margin-top: 2vw;
+    color: white;
+}
+.feedback-section-content p{
+    font-size: 18px;
+    margin-top: 2vw;
+    color: #687C64;
+    margin-bottom: 3.5vw;
+}
+.feedback-section-content a{
+    background-color:#687C64;
+    padding: 1.5vw 2vw;
+    font-size: 16px;
+    text-decoration: none;
+    font-weight: 700;
+    color: white;
+}
+
+.feedback-section-testimonials{
+    position: relative;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+  }
+  
+  .feedback-section-testimonials-slide-container{
+    display: flex;
+    transition: transform 0.5s ease;
+    width: 100%;
+    height: 50%;
+    margin: 7vw 0vw 0vw 0vw;
+    border: 1px solid grey;
+  }
+  
+  .feedback-section-testimonials-slide{
+    flex:0 0 100%;
+    text-align: center;
+    padding: 20px;
+    color: white;
+    font-size: 16px;
+    width: 100%;
+    height: 100%;
+    border-left: 5px solid orange;
+  }
+  .feedback-section-testimonials-slide-content{
+    width: 100%;
+    height: 50%;
+  }
+  .feedback-section-testimonials-slide-content p{
+    font-size: 18px;
+    text-align: left;
+  }
+  
+  .feedback-section-testimonials-slide-profile{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: row;
+    gap: 1vw;
+    align-items: center;
+  }
+  .feedback-section-testimonials-slide-profile img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+  }
+  .pro-details h6{
+    font-size: 18px;
+  }
+
+
+
+  /* latest news style start  */
+  .latest-news-section{
+    width: 100vw;
+    height: 160vh;
+    padding: 8vw 5vw;
+  }
+  .latest-news-content{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+.latest-news-content-text-span{
+    font-size: 18px;
+    color: #687C64;
+    margin-right: 0.5vw;
+}
+.latest-news-content-text-line{
+    color: #DF5311;
+}
+.latest-news-content a{
+    text-decoration: none;
+    background-color: transparent;
+    border: 2px solid red;
+    padding: 1.5vw 2.5vw;
+    color:#144047;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+  .latest-news-box-container{
+    width: 100%;
+    height: 90%;
+    overflow: hidden;
+  }
+  .latest-news-box-container h2{
+    font-size: 50px;
+    color: #144047;
+  }
+
+
+  /* news slide show start */ 
+  .latest-news-box-container{
+    overflow: hidden;
+  }
+  
+  .latest-news-boxes{
+    display: flex;
+    transition: transform 0.5s ease;
+    margin-top: 3vw;
+    gap: 2vw;
+  }
+  
+  .latest-news-boxes-slide{
+    width: 100%;
+    height: 100%;
+    flex: 0 0 calc(100% / 3);
+    color: black;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+  }
+  .latest-news-boxes-slide-image{
+    position: relative;
+    width: 100%;
+    height: 30%;
+  }
+  .latest-news-boxes-slide-image img{
+    width: 100%;
+    height: 100%;
+  }
+  .date-span{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: #DF5311;
+    color: white;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 1vw;
+  }
+  .latest-news-boxes-slide-content{
+    width: 100%;
+    height: 70%;
+    padding: 2vw;
+  }
+  .latest-news-boxes-slide-content h4{
+    font-size: 20px;
+    color:#144047;
+  }
+  .latest-news-boxes-slide-content p{
+    font-size: 16px;
+    color: #687C64;
+    margin: 0.5vw 0vw 1vw 0vw;
+  }
+  .latest-news-boxes-slide-content a{
+    text-decoration: none;
+    color: #144047;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+  .latest-news-boxes-slide-content i{
+    font-size: 18px;
+    margin-right: 0.5vw;
+    color: red;
+  }
+
+
+  /* gallery section start*/
+  .our-gallery-section{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    gap: 2vw;
+    background-color: #f0f0f0;
+  }
+  .gallery-content{
+    width: 40%;
+    height: 100%;
+    padding: 5vw;
+  }
+  .gallery-text{
+    display: flex;
+    flex-direction: row;
+  }
+  .gallery-text-span{
+    color: #687C64;
+    font-size: 18px;
+  }
+  .gallery-text-line{
+    color: red;
+    margin-left: 0.2vw;
+  }
+  .gallery-content h2{
+    font-size: 45px;
+    color: #144047;
+    margin-bottom: 1vw;
+    margin-top: 1vw
+  }
+  .gallery-content p{
+    font-size: 16px;
+    color: #768385;
+    margin-bottom: 4vw;
+  }
+  .gallery-content a{
+    font-size: 14px;
+    text-decoration: none;
+    background-color: #687C64;
+    color:  white;
+    font-weight: 700;
+    padding: 1.5vw 2.5vw;
+  }
+
+
+  .gallery-box-grid{
+    width: 60%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 5vw;
+  }
+  .gallery-box-grid img{
+    width: 200px;
+    height: 130px;
+    border-radius: 1vw;
+    cursor: pointer;
+  }
+  
+
+  /* gallery section end */
+
+  /* contact section styles start */
+  .contact-section{
+    width: 100vw;
+    height: 70vh;
+    display: flex;
+    flex-direction: row;
+    gap: 2vw;
+    background-color: #DF5311;
+  }
+  .contact-content{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    padding: 0vw 5vw;
+    color: white;
+  }
+  .contact-content h4{
+    font-size: 16px;
+    font-weight: 400;
+  }
+  .contact-content h2{
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 4vw;
+    margin-top: 1vw;
+    margin-bottom: 3vw;
+  }
+  address{
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 2.5vw;
+    letter-spacing: 0.2vw;
+  }
+  .mailings{
+    display: flex;
+    flex-direction: row;
+    gap: 2vw;
+  }
+  .mailings a{
+    text-decoration: none;
+    color: white;
+  }
+  .mailings i{
+    margin-right: 1vw;
+  }
+  .contact-map{
+    width: 50%;
+    height: 100%;
+  }
+  .contact-map iframe{
+    width: 100%;
+    height: 100%;
+  }
+  
+/* main styles end */
+
+
+/* footer styles start */
+footer{
+    width:100vw;
+    height: 100vh;
+    border: 1px solid grey;
+}
+.footer-section{
+    width: 100%;
+    height: 100%;
+    padding: 8vw 5vw;
+    background-color: #174249;
+}
+.footer-menu{
+    width:100%;
+    height: 80%;
+    display: grid;
+    grid-template-columns: 3fr 1.5fr 1.5fr 1.5fr 2fr;
+    justify-content: space-evenly;
+    gap: 4vw;
+}
+.footer-menu-items{
+    display: flex;
+    flex-direction: column;
+}
+.footer-menu-items img{
+    width: 100%;
+    margin-bottom: -2vw;
+}
+.footer-logo-line{
+    width: 100%;
+    height: 0.5px;
+    background-color: #8FA6AA;
+}
+.footer-menu-items a{
+    text-decoration: none;
+    color:#8FA6AA;
+    line-height: 2.5vw;
+}
+.footer-menu-items a:hover{
+    color: #DF5311;
+}
+.footer-menu-items h4{
+    color: whitesmoke;
+    margin-bottom: 1.5vw;
+}
+.footer-menu-items p{
+    color:#8FA6AA;
+    margin-top: 2vw;
+    line-height: 2vw;
+}
+.footer-donate-btn{
+    background-color: #138999;
+    padding: 1vw 2vw;
+    color: white;
+}
+.footer-menu-items .ri-heart-fill{
+    color: red;
+}
+.footer-menu-items .ri-mail-fill, .footer-menu-items .ri-phone-fill{
+    margin-right: 1vw;
+    color:#FCB429;
+}
+.footer-line{
+    width: 100%;
+    height: 0.5px;
+    margin-top: 4vw;
+    margin-bottom: 2vw;
+    background-color: #8FA6AA;
+}
+.footer-social{
+    width:100%;
+    height: 20%;
+    display: flex;
+    flex-direction: row;
+}
+.footer-copy-right{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    color: #8FA6AA;
+}
+.footer-copy-right a{
+    text-decoration: none;
+    color: #8FA6AA;
+    font-weight: 600;
+    font-style: italic;
+    font-size: 16px;
+    margin-left: 0.5vw;
+}
+.footer-copy-right a:hover{
+    color: #DF5311;
+}
+.footer-social-links{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: right;
+    gap: 1vw;
+}
+.footer-social-links i{
+    font-size: 18px;
+    color: white;
+    background-color: #22a1b5;
+    padding: 1vw;
+    border-radius: 50%;
+}
+
+/* footer styles end */
+
+
+
+
+
+/* ############################################################################# */
+/* About Page Styles start */
+
+/* about about section start */
+.about-page-section{
+    position: relative;
+    width: 100vw;
+    height: 60vh;
+    background-image: url('images/poor_girl_child.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 5vw;
+}
+.about-page-section::before{
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: ' ';
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.563);
+}
+.about-page-text{
+    display: flex;
+    flex-direction: row;
+}
+.about-page-text-span{
+    color: white;
+    top: 6vw;
+    position: absolute;
+    z-index: 1;
+}
+.about-page-text-span-line{
+    color: white;
+    position: absolute;
+    top: 6vw;
+    left: 15.5vw;
+    z-index: 1;
+}
+.about-page-section h2{
+    font-size: 50px;
+    color: white;
+    position: absolute;
+    top: 8vw;
+    z-index: 1;
+}
+.about-page-section p{
+    font-size: 16px;
+    color: white;
+    position: absolute;
+    top: 14vw;
+    z-index: 1;
+}
+
+/* more about section start */
+.more-about-section{
+    width: 100vw;
+    height: 100vh;
+    padding: 10vw 5vw;
+    display: flex;
+    flex-direction: row;
+    gap: 2vw;
+    border: 1px solid grey;
+}
+.more-about-image{
+    width: 50%;
+    height: 100%;
+    background-image: url('images/poor_girl_child.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.more-about-content{
+    width: 50%;
+    height: 100%;
+}
+.more-about-content-text-span{
+    color: #687C64;
+    font-size: 16px;
+}
+.more-about-content-text-span-line{
+    color: red;
+}
+.more-about-content h2{
+    font-size: 50px;
+    line-height: 4.8vw;
+    margin-top: 1vw;
+    color: #144047;
+}
+.more-about-buttons{
+    margin-top: 3vw;
+    display: flex;
+    flex-direction: row;
+    gap: 2vw;
+    justify-content: start;
+    align-items: center;
+}
+.more-about-buttons a{
+    text-decoration: none;
+    padding: 1.5vw 2vw;
+    background-color: #F1F6F7;
+    color:#174249;
+    font-weight: 700;
+}
+.more-about-buttons i{
+    font-size: 1.8vw;
+    margin-right: 1vw;
+    color: #22a1b5;
+}
+.more-about-content h6{
+    font-size: 18px;
+    color: red;
+    margin-top: 2vw;
+}
+.more-about-content p{
+    font-size: 16px;
+    color: #687C64;
+    margin-top: 1vw;
+}
+/* About Page styles end */
